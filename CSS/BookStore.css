@@ -1,0 +1,15 @@
+.body {
+    font-family: Arial, sans-serif;
+    background-color: cyan;
+    text-align: center;
+}
+.header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+.Tablehead {
+    background-color: lightcoral;
+    font-weight: bold;
+}

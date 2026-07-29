@@ -1,0 +1,19 @@
+nav {
+    background-color: #2200ff;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    float: center;
+}
+
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}

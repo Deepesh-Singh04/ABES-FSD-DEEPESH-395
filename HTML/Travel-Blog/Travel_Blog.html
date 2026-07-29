@@ -1,0 +1,68 @@
+<!--# Exercise: Create a 'Travel Blog' Webpage
+
+## Objective:
+To design a single-page travel blog layout using HTML only, practicing images, multimedia, links, lists, and anchors.
+
+## Requirements:
+1. Page title should be "My Travel Blog" - replace "My" with your name.
+2. At the top, add a heading: "Welcome to My Travel Blog"
+3. Include 3 destinations (e.g., Paris, Tokyo, Budapest). Each should have:
+     - A subheading with the city name.
+     - One image with alt text.
+     - A short description in a paragraph.
+     - A list of 2-3 activities.
+4. Add an internal navigation menu at the top (links to jump to each destination using anchors)
+5. Add an external link to a travel website (e.g., MakeMyTrip, TripAdvisor) that opens in a new tab.
+6. Include an audio or video element (students can use any free MP3/MP4).
+7. At the bottom, add a 'Back to Top' link.-->
+
+
+<!DOCTYPE html>
+<head>
+    <title>My Travel Blog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to My Travel Blog</h1>
+    <nav>
+        <a href="#paris">Paris</a> | 
+        <a href="#tokyo">Tokyo</a> | 
+        <a href="#budapest">Budapest</a>
+    </nav>
+    <div class = "parent">
+    <h2 id="paris">Paris</h2>
+    <img src="paris.jpg" alt="Eiffel Tower in Paris" width="300">
+    <p>Paris, the city of lights, is known for its art, fashion, and culture. It is home to iconic landmarks such as the Eiffel Tower and the Louvre Museum.</p>
+    <ul>
+        <li>Visit the Eiffel Tower</li>
+        <li>Explore the Louvre Museum</li>
+        <li>Stroll along the Seine River</li>
+    </ul>
+
+    <h2 id="tokyo">Tokyo</h2>
+    <img src="tokyo.jpg" alt="Tokyo Skyline" width="300">
+    <p>Tokyo, Japan's bustling capital, blends the ultramodern with traditional culture. From neon-lit skyscrapers to historic temples, Tokyo offers a unique experience.</p>
+    <ul>
+        <li>Visit the Tokyo Tower</li>
+        <li>Explore Asakusa and Senso-ji Temple</li>
+        <li>Shop in Shibuya and Harajuku</li>
+    </ul>
+
+    <h2 id="budapest">Budapest</h2>
+    <img src="budapest.avif" alt="Budapest Cityscape" width="300">
+    <p>Budapest, Hungary's capital, is known for its stunning architecture and thermal baths. The city is divided by the Danube River into Buda and Pest.</p>
+    <ul>
+        <li>Relax in the Széchenyi Thermal Bath</li>
+        <li>Visit Buda Castle</li>
+        <li>Walk across the Chain Bridge</li>
+    </ul>
+
+    <p>For more travel inspiration, visit <a href="https://www.tripadvisor.com" target="_blank">TripAdvisor</a>.</p>
+    </div>
+
+    <br><br>
+</body>
+
+
+

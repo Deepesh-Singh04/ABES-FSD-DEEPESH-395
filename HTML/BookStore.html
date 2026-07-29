@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Book Store</title>
+        <link rel="stylesheet" href="../Js/BookStore.js">
+        <style>
+            body{
+                background-color: cornsilk;
+                font-family: Arial, sans-serif;
+            }
+            #Tablehead{
+                background-color: lightsalmon;
+                color: white;
+            }
+            Table{
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;  
+            }
+            #purchase-btn{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                padding: 10px 20px;
+                background-color: lightblue;
+                border-radius: 5px;
+            }
+            </style>
+    </head>
+
+    <body>
+        <table border="1" cellpadding="10" cellspacing="0" class ="Table">
+            <tr id = "Tablehead">
+                <th>S.No.</th>
+                <th>Title</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Purchase</th>
+                <th>Quantity</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>A Court of Thornes and Roses</td>
+                <td>Sarah J. Maas</td>
+                <td>₹1199</td>
+                <th>
+                    <input type = "checkbox" onclick="updateTotal()">
+                </th>
+                <td>
+                    <input type = "number" min="1" max="10">
+                </td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Harry Potter and the Sorcerer's Stone</td>
+                <td>J.K. Rowling</td>
+                <td>₹499</td>
+                <th>
+                    <input type = "checkbox">
+                </th>
+                <td>
+                    <input type = "number" min="1" max="10">
+                </td> 
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The Lord of the Rings</td>
+                <td>J.R.R. Tolkein</td>
+                <td>₹799</td>
+                <th>
+                    <input type = "checkbox">
+                </th>
+                <td>
+                    <input type = "number" min="1" max="10">
+                </td>
+
+            </tr>
+                <tr>
+                    <td>4</td>
+                    <td>The Hunger Games</td>
+                    <td>Suzanne Collins</td>
+                    <td>₹599</td>
+                    <th>
+                    <input type = "checkbox">
+                    </th>
+                    <td>
+                        <input type = "number" min="1" max="10">
+                    </td>
+                </tr>
+        </table>
+        <button id="purchase-btn">Purchase</button>
+    </body>

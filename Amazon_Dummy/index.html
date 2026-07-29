@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Amazon dummy</title>
+    <style>
+        :root{
+            --amazon-blue:#131921;
+            --amazon-yellow:#ff9900;
+            --bg:#fff;
+            --muted:#666;
+        }
+        html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:#111;}
+        .topbar{
+            background:var(--amazon-blue);color:#fff;display:flex;align-items:center;padding:10px 16px;
+        }
+        .logo{font-weight:700;color:var(--amazon-yellow);font-size:22px;margin-right:18px;letter-spacing:0.5px;}
+        .search{
+            flex:1;display:flex;max-width:720px;margin-right:18px;
+        }
+        .search input{
+            flex:1;padding:8px 10px;border:0;border-radius:3px 0 0 3px;font-size:14px;
+        }
+        .search button{
+            background:#febd69;border:0;padding:8px 12px;border-radius:0 3px 3px 0;cursor:pointer;font-weight:600;
+        }
+        .account{font-size:13px;text-align:right;color:#fff;opacity:0.95;}
+        .tabs-wrap{border-bottom:1px solid #e6e6e6;background:#f7f7f7;}
+        .tabs{
+            display:flex;gap:8px;padding:10px 18px;align-items:center;max-width:1100px;margin:0 auto;
+        }
+        .tab-btn{
+            background:transparent;border:0;padding:8px 12px;border-radius:4px;cursor:pointer;font-size:14px;color:#111;
+        }
+        .tab-btn[aria-selected="true"]{
+            background:#b9eeba;border:1px solid #020efa;box-shadow:0 1px 0 rgba(0,0,0,0.04);
+        }
+        .panel-home{display:block;}
+        .tab-panels{max-width:1100px;margin:18px auto;padding:0 18px;}
+        .panel{display:none;padding:12px 8px;background:#fff;border-radius:4px;border:1px solid #eee;}
+        .panel[data-visible="true"]{display:block;}
+        @media (max-width:600px){
+            .search{display:none}
+            .tabs{overflow:auto}
+        }
+    </style>
+</head>
+<html>  
+    <body>
+        <div class="topbar">
+            <div class="logo">Amazon</div>
+            <div class="search">
+                <input type="search" placeholder="Search Amazon" aria-label="Search">
+                <button type="button">Search</button>
+            </div>
+            <div class="account" style="text-align:right;">Hello, Sign in</div>
+        </div>
+
+        <div class="tabs-wrap">
+            <div class="tabs" role="tablist" aria-label="Main navigation"> 
+                <a href="#panel-home" class="tab-btn" role="tab" id="tab-home" aria-controls="panel-home" aria-selected="true" tabindex="0">Home</a>
+                <a href="#panel-deals" class="tab-btn" role="tab" id="tab-deals" aria-controls="panel-deals" aria-selected="false" tabindex="-1">Today's Deals</a>
+                <a href="#panel-categories" class="tab-btn" role="tab" id="tab-categories" aria-controls="panel-categories" aria-selected="false" tabindex="-1">Categories</a>
+                <a href="#panel-cart" class="tab-btn" role="tab" id="tab-cart" aria-controls="panel-cart" aria-selected="false" tabindex="-1">Cart</a>
+                <a href="#panel-more" class="tab-btn" role="tab" id="tab-more" aria-controls="panel-more" aria-selected="false" tabindex="-1">More</a>
+            </div>
+        </div>
+
+        <div class="tab-panels">
+            <section class="panel" id="panel-home" role="tabpanel" aria-labelledby="tab-home" data-visible="true" aria-hidden="false">
+                <h2>Welcome</h2>
+                <p>Browse featured products, recommendations and more.</p>
+            </section>
+            <section class="panel" id="panel-deals" role="tabpanel" aria-labelledby="tab-deals" data-visible="true" aria-hidden="true">
+                <h2>Today's Deals</h2>
+                <ul>
+                    <li>Deal 1 — Limited time offer</li>
+                    <li>Deal 2 — Save big</li>
+                    <li>Deal 3 — Best seller discount</li>
+                </ul>
+            </section>
+
+            <section class="panel" id="panel-categories" role="tabpanel" aria-labelledby="tab-categories" data-visible="true" aria-hidden="true">
+                <h2>Categories</h2>
+                <p>Electronics · Books · Home · Fashion · Toys</p>
+            </section>
+
+            <section class="panel" id="panel-cart" role="tabpanel" aria-labelledby="tab-cart" data-visible="true" aria-hidden="true">
+                <h2>Your Cart</h2>
+                <p>Your cart is empty.</p>
+            </section>
+        </div>
+    </body>
+</html>

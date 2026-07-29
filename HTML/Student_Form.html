@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Entry Form</title>
+    <link rel="stylesheet" href="E:\FSD\GIT\ABES-FSD-DEEPESH-395\CSS\Formstyles.css">
+</head>
+<body>
+
+    <fieldset>
+        <legend>Student Entry Form</legend>
+        <form>
+            <table>
+                <tr>
+                    <td><label for="student-id">Student ID</label></td>
+                    <td><input type="text" id="student-id" placeholder="Enter Student ID"></td>
+                </tr>
+                <tr>
+                    <td><label for="student-name">Student Name</label></td>
+                    <td><input type="text" id="student-name" placeholder="Enter Your Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="father-name">Father's Name</label></td>
+                    <td><input type="text" id="father-name" placeholder="Enter Father's Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="mother-name">Mother's Name</label></td>
+                    <td><input type="text" id="mother-name" placeholder="Enter Mother's Name"></td>
+                </tr>
+                <tr>
+                    <td><label for="dob">Date of Birth</label></td>
+                    <td><input type="date" id="dob"></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td class="inline-group">
+                        <label><input type="radio" name="gender" value="male"> Male</label>
+                        <label><input type="radio" name="gender" value="female" > Female</label>
+                        <label><input type="radio" name="gender" value="other"> Other</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="mobile">Mobile No.</label></td>
+                    <td><input type="text" id="mobile"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email ID</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password</label></td>
+                    <td><input type="password" id="password"></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><textarea id="address"></textarea></td>
+                </tr>
+                <tr>
+                    <td><label for="department">Department</label></td>
+                    <td>
+                        <select id="department" >
+                            <option value="" disabled selected>Select Department</option>
+                            <option value="CSE">CSE</option>
+                            <option value="ECE">ECE</option>
+                            <option value="ME">ME</option>
+                            <option value="CE">CE</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="course">Course</label></td>
+                    <td>
+                        <select id="course">
+                            <option value="" disabled selected>Select Course</option>
+                            <option value="B.Tech">B.Tech</option>
+                            <option value="M.Tech">M.Tech</option>
+                            <option value="BCA">BCA</option>
+                            <option value="MCA">MCA</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="semester">Semester</label></td>
+                    <td>
+                        <select id="semester">
+                            <option value="" disabled selected>Select Semester</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobbies</td>
+                    <td class="inline-group">
+                        <label><input type="checkbox" name="hobbies" value="Reading" > Reading</label>
+                        <label><input type="checkbox" name="hobbies" value="Sports" > Sports</label>
+                        <label><input type="checkbox" name="hobbies" value="Music" > Music</label>
+                        <label><input type="checkbox" name="hobbies" value="Cinematography" > Cinematography</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Upload Photo</label></td>
+                    <td><input type="file" id="photo"></td>
+                </tr>
+                <tr> 
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</body>
+</html>
